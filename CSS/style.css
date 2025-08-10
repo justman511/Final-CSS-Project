@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #1f0202e7;
+    /*background-color: #1f0202e7; */
+    background: linear-gradient(to left, #1f0202e7, #935454e7, #1f0202e7);
 }
 section {
     padding: 20px;
@@ -42,6 +43,12 @@ ul li a {
 
 ul li a:hover {
     color: #f0a500;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
 }
 
 .carousel {
@@ -138,9 +145,20 @@ ul li a:hover {
 #contact-section form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /*gap: 10px;*/
     width: 500px;
-    justify-content: center;
+    justify-content: center; 
+    padding: 20px;
+}
+#contact-section form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    gap: 10px;
 }
 #contact-section form input[type="submit"] {
     background-color: #f0a500;
@@ -150,9 +168,23 @@ ul li a:hover {
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    transition: background-color 0.3s;
+   /* transition: background-color 0.3s;*/
     border-radius: 10px;
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    height: 70px;
+    
+}
+#contact-section form input[type="submit"]:hover {
+    background-color: white;
+    color: #f0a500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+
 }
 
 #contact-section h2 {
@@ -173,8 +205,11 @@ footer {
     /*background-color: #1f0202e7;*/
     color: white;
     text-align: center;
-    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 40px;
     position: relative;
     bottom: 0;
     width: 100%;
+    border-top: 1px solid white;
+    margin-top: 50px;
 }
