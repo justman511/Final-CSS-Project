@@ -1,8 +1,25 @@
+/*CSS reset code*/
 
-body {
+* {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html {
     font-family: Arial, sans-serif;
+    font-size: 16px; /* Base font size */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+
+body {
+    inline-height: 1.5;
+    /*font-size: 16px; */
     /*background-color: #1f0202e7; */
     background: linear-gradient(to left, #1f0202e7, #935454e7, #1f0202e7);
 }
@@ -14,12 +31,19 @@ section {
     margin-bottom: 1px solid white  !important;
 }
 nav {
-   /* background-color: #1f0202e7;*/
+   background-color: #1f0202e7;
     padding: 10px;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+.my-navbar {
+    background-color: #1f0202e7 !important;
+}
+.my-navbar a {
+    color: white !important;
+    font-weight: bold !important;
 }
 
 ul {
@@ -41,16 +65,14 @@ ul li a {
     transition: color 0.3s;
 }
 
-ul li a:hover {
-    color: #f0a500;
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    margin-left: auto;
+.my-navbar ul li a:hover {
+    color: #f0a500 !important; 
+    background-color: white !important;
+    border-radius: 5px  !important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease-in-out !important;
+    margin-left: auto !important; 
 }
-
 .carousel {
     position: relative;
     width: 100%;
@@ -60,7 +82,7 @@ ul li a:hover {
 .carousel-item img {
     width: 100%;
     height: auto;
-}
+}  
 .main-container {
     display: flex;
     flex-direction: column;
@@ -92,7 +114,8 @@ ul li a:hover {
 }
 #picture-section {
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
+    height: auto;
     padding: 20px;
     /*background-color: #1f0202e7;*/
     display: flex;
@@ -126,6 +149,8 @@ ul li a:hover {
 .videos-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -212,4 +237,70 @@ footer {
     width: 100%;
     border-top: 1px solid white;
     margin-top: 50px;
+}
+
+
+/* Responsive Design */
+
+@media  screen and (max-width: 1024px) {
+     .my-navbar {
+        background-color: #1f0202e7 !important;
+        color: black !important;
+    }
+    .my-navbar a {
+        color: #f0a500 !important;
+        
+    }
+    .main-container h1 {
+        font-size: 1.5em;
+    }
+    #picture-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    #video-section h2 {
+        font-size: 1.5em;
+    }
+    #video-section .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-section form {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+   /* nav ul {
+        flex-direction: column;
+        align-items: center;
+    }*/
+    .my-navbar {
+        background-color: #1f0202e7 !important;
+        color: black !important;
+    }
+    .my-navbar a {
+        color: #f0a500 !important;
+    }
+    .my-navbar a:hover {
+        background-color: #1f0202e7 !important;
+    }
+    .main-container h1 {
+        font-size: 1.5em;
+    }
+    #picture-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    #video-section h2 {
+        font-size: 1.5em;
+    }
+    #video-section .videos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-section form {
+        width: 90%;
+    }
 }
