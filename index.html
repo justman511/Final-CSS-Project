@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>HTML FINAL PROJECT</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav>
+      <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#picture-section">Menus</a></li>
+        <li><a href="#video-section">Video Tour</a></li>
+        <li><a href="#contact-section">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- End Header Section -->
+
+    <!-- Home Section -->
+    <section id="home-section">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./Images/Background_2.jpg"
+              class="d-block w-100"
+              alt="cossy restaurant setting"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./Images/Background_1.jpeg"
+              class="d-block w-100"
+              alt="brightly lit restaurant setting"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--End Home Section -->
+    <!-- Main Container -->
+    <div class="main-container">
+      <h1 class="text-center p-5 mb-5 mt-5">
+        SEE OUR TOP <br />
+        <span>AFRICAN DICHES</span>
+      </h1>
+      <!-- Pictures Section -->
+      <section id="picture-section">
+        <!--Picture 1-->
+        <div>
+          <div>
+            <img
+              src="./Images/African_Delicacy/Beef-in-Stew.webp"
+              alt="Beef in Stew"
+            />
+          </div>
+        </div>
+        <!-- End Picture 1 -->
+
+        <!--Picture 2-->
+        <div>
+          <div>
+            <img
+              src="./Images/African_Delicacy/Beef-Suya.webp"
+              alt="Beff Suya"
+            />
+          </div>
+        </div>
+        <!-- End Picture 2 -->
+        <!--Picture 3-->
+        <div>
+          <div>
+            <img src="./Images/African_Delicacy/Beermate.webp" alt="Beermate" />
+          </div>
+        </div>
+        <!-- End Picture 3 -->
+
+        <!--Picture 4-->
+        <div>
+          <div>
+            <img
+              src="./Images/African_Delicacy/Edikanikong.webp"
+              alt="Edikanikong"
+            />
+          </div>
+        </div>
+        <!-- End Picture 4 -->
+
+        <!--Picture 5-->
+        <div>
+          <div>
+            <img
+              src="./Images/African_Delicacy/Vegetable-Ratatouille.webp"
+              alt="Vegetable Ratatouille"
+            />
+          </div>
+        </div>
+        <!-- End Picture 5 -->
+
+        <!--Picture 6-->
+        <div>
+          <div>
+            <img
+              src="./Images/African_Delicacy/Grilled-Tiger-Prawns.webp"
+              alt="Grilled Tiger Prawns"
+            />
+          </div>
+        </div>
+        <!-- End Picture 6 -->
+
+        <!--Picture 7-->
+        <div>
+          <div>
+            <img src="./Images/African_Delicacy/Nkwobi.webp" alt="Nkwobi" />
+          </div>
+        </div>
+        <!-- End Picture 7 -->
+
+        <!--Picture 8-->
+        <div>
+          <div>
+            <img
+              src="./Images/African_Delicacy/Pepper-Soup-Assorted.webp"
+              alt="Pepper Soup Assorted"
+            />
+          </div>
+        </div>
+        <!-- End Picture 8 -->
+
+        <!--Picture 9-->
+        <div>
+          <div>
+            <img
+              src="./Images/African_Delicacy/Salmon-Cropped.webp"
+              alt="Vegetable Soup"
+            />
+          </div>
+        </div>
+        <!-- End Picture 9 -->
+      </section>
+      <!-- End Pictures Section -->
+
+      <!-- Videos Section -->
+      <section id="video-section">
+        <h2 class="text-center p-5 mb-5 mt-5">
+          VIDEO TOUR OF OUR <br />
+          <span>BEAUTIFUL RESTAURANT</span>
+        </h2>
+        <div class="videos-container">
+          <!--Video 1-->
+          <div>
+            <div>
+              <iframe
+                width="400"
+                height="250"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <!-- End Video 1 -->
+
+          <!--Video 2-->
+          <div>
+            <div>
+              <iframe
+                width="400"
+                height="250"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <!-- End Video 2 -->
+          <!--Video 3-->
+          <div>
+            <div>
+              <iframe
+                width="400"
+                height="250"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <!-- End Video 3 -->
+        </div>
+        <!--Video container end-->
+      </section>
+      <!-- End Videos Section -->
+
+      <!-- Contact Section -->
+      <section id="contact-section">
+        <div>
+          <h2 class="text-center p-5 mb-5 mt-5">
+            CONTACT US <br />
+            <span> TO MAKE A RESERVATION</span>
+          </h2>
+          <form>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            /><br /><br />
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              placeholder="Enter your last name"
+            /><br /><br />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            /><br /><br />
+            <label for="date">Reservation Date:</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+              placeholder="Select a date"
+            /><br /><br />
+            <label for="time">Reservation Time:</label>
+            <input
+              type="time"
+              id="time"
+              name="time"
+              required
+              placeholder="Select a time"
+            /><br /><br />
+            <label for="guests">Number of Guests:</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              required
+              placeholder="Enter number of guests"
+            /><br /><br />
+            <label for="phoneNumber">Phone Number:</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              required
+              placeholder="Enter your phone number"
+            /><br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </div>
+    <!-- End Main Container -->
+
+    <!-- Footer Section -->
+    <footer style="margin-top: 40px; text-align: center">
+      &copy; 2025 Umuahe Restaurant. &nbsp; &nbsp; All rights reserved.
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Latest compiled JavaScript -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
