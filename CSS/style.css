@@ -25,6 +25,12 @@ body {
     /*background: linear-gradient(to top, #1f0202e7, #935454e7, #1f0202e7);*/
     /*background-attachment: fixed; */ /* Fix the background during scroll */
 }
+h1:hover, h2:hover {
+    color: #f0a500; /* Yellow color on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+    transform: scale(1.1);
+}
 section {
     padding: 20px; /* Consistent padding for sections */
     margin-bottom: 1px; /* Space between sections */
@@ -216,7 +222,13 @@ ul li a {
     padding: 0; /* Remove default padding */
     font-size: 1.2rem; /* Font size for overlay title */
     font-weight: bold; /* Bold text for overlay title */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+     cursor: pointer; /* Pointer cursor on hover */
 
+}
+.picture-container .overlay h3:hover {
+    transform: scale(1.1); /* Slightly enlarge text on hover */
+   
 }
 .picture-container .overlay p {
     font-size: 0.9rem; /* Font size for overlay description */
@@ -224,7 +236,13 @@ ul li a {
     line-height: 1.4; /* Line height for readability */
     font-weight: lighter; /* Lighter font weight for description */
     font-style: italic; /* Italic style for description */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+     cursor: pointer; /* Pointer cursor on hover */
 }
+.picture-container .overlay p:hover {
+    transform: scale(1.09); /* Slightly enlarge text on hover */    
+}
+
 /*
 .centered {
   position: absolute;
