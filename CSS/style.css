@@ -113,17 +113,11 @@ ul li a {
     font-weight: bold;
     color: #f0a500;
 }
-#picture-section img {
-    width: 400px;
-    height: 250px;
-}
-#picture-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+/* Picture Section */
+ 
 #picture-section {
     width: 100%;
-    /*height: 100vh;*/
+    /* height: 100vh;*/
     height: auto;
     padding: 20px;
     /*background-color: #1f0202e7;*/
@@ -131,8 +125,66 @@ ul li a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
+
+/* Picture Section with Overlay Text */
+.picture-container {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+   /* margin: 10px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.picture-container .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+.picture-container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+.picture-container:hover .photo img {
+    transform: scale(1.1);
+}
+.picture-container:hover .overlay {
+    opacity: 1;
+} 
+.picture-container .overlay h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.picture-container .overlay p {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+/*
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*/
 
 /* Video Section */
 #video-section iframe {
@@ -226,6 +278,7 @@ ul li a {
     color: #f0a500;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
     margin-left: auto;
 
 }
